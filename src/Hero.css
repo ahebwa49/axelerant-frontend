@@ -1,0 +1,124 @@
+/* hero section */
+
+.hero {
+  position: relative;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./static/img/bannerBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
+}
+.hero__header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  /* border: 1px solid red; */
+  font-family: "Monserrat", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.hero__header__logo {
+  display: flex;
+  margin-left: 5rem;
+  cursor: pointer;
+}
+
+.hero__header__logo span {
+  color: red;
+  margin-left: 0.5rem;
+}
+
+.hero__header__options {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.hero__header__options span {
+  margin-right: 1.2rem;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+.hero__header__options span:nth-child(5) {
+  display: flex;
+  margin-right: 3rem;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  /* border: 1px solid red; */
+  background: red;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.hero__header__options__img {
+  margin-right: 0.5rem;
+}
+.hero__header__options__getintouch {
+  margin-right: 0rem !important;
+  padding: 0.2rem 0rem !important;
+  /* border: 1px solid green; */
+}
+
+.hero__heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  font-family: "Monserrat", sans-serif;
+  color: white;
+  text-align: center;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.hero__services {
+  display: flex;
+  position: relative;
+  /* border: 1px solid red; */
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__services__service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #47443f;
+  width: 12rem;
+  height: 12rem;
+  flex-direction: column;
+  border-radius: 0.4rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+.hero__services :nth-child(3){
+  margin-right: 0rem;
+}
+
+.hero__services__service__name {
+  margin-top: 1rem;
+}
