@@ -1,0 +1,24 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding-top: 6rem;
+//   border: 1px solid red;
+  background-color: #f7f7f7;
+}
+
+.testimonials__heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  color: #484340;
+}
+
+.testimonials__testimonial {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0rem 2rem;
+  margin-bottom: 6rem;
+  
+}

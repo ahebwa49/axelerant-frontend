@@ -1,0 +1,45 @@
+.testimonial {
+  margin-top: 3rem;
+  width: 30%;
+  //   border: 1px solid red;
+}
+
+.testimonial__quote {
+  line-height: 1.5;
+  background-color: white;
+  text-align: justify;
+  padding: 2rem 3rem;
+  color: #817370;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px #888888;
+  // border: 1px solid red;
+}
+
+.testimonial__user {
+  display: flex;
+  margin-top: 2rem;
+  // border: 1px solid blue;
+  align-items: center;
+}
+
+.testimonial__user__details {
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid green;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.testimonial__user__details__name {
+  display: flex;
+  color: #484340;
+  // margin-top: 0.5rem;
+  flex-direction: column;
+  // border: 1px solid red;
+}
+
+.testimonial__user__details__org {
+  color: #877976;
+  margin-top: 0.2rem;
+}
