@@ -1,14 +1,18 @@
 import React from "react";
-import "./Hero.css";
-import getInTouchIcon from "./static/img/getInTouchIcon.png";
-import serviceIcon from "./static/img/service.png";
-import serviceIconOne from "./static/img/service1.png";
-import serviceIconTwo from "./static/img/service2.png";
+import "../static/styles/Hero.scss";
+import getInTouchIcon from "../static/img/getInTouchIcon.png";
+import serviceIcon from "../static/img/service.png";
+import serviceIconOne from "../static/img/service1.png";
+import serviceIconTwo from "../static/img/service2.png";
+import { MenuButton } from "./MenuButton";
 
 const Hero = () => {
   return (
     <section className="hero">
       <div className="hero__header">
+        <div className="hero__header__mobilemenubutton">
+          <MenuButton />
+        </div>
         <div className="hero__header__logo">
           COMPANY <span>LOGO</span>
         </div>
@@ -28,9 +32,12 @@ const Hero = () => {
             </span>
           </span>
         </div>
+        <div className="hero__header__getintouchicon">
+          <img src={getInTouchIcon} alt="get in touch" />
+        </div>
       </div>
       <div className="hero__heading">
-        <span>Integer bibendum sit amet arcu vel egestas</span>
+        <span>Integer bibendum sit amet arcu vel egestas.</span>
       </div>
       <div className="hero__services">
         <div className="hero__services__service">

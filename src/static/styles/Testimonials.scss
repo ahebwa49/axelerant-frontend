@@ -3,7 +3,7 @@
   flex-direction: column;
   margin-top: 3rem;
   padding-top: 6rem;
-//   border: 1px solid red;
+    // border: 1px solid red;
   background-color: #f7f7f7;
 }
 
@@ -20,5 +20,18 @@
   justify-content: space-evenly;
   margin: 0rem 2rem;
   margin-bottom: 6rem;
-  
+}
+
+@media only screen and (max-width: 1000px) {
+  .testimonials__testimonial {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .testimonials__testimonial {
+    flex-direction: column;
+  }
 }

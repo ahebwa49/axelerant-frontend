@@ -1,11 +1,13 @@
 import React from "react";
-import clientImage from "./static/img/client-img.png";
-import "./Testimonial.scss";
+import clientImage from "../static/img/client-img.png";
+import quoteIcon from "../static/img/quote.png";
+import "../static/styles/Testimonial.scss";
 
 export const Testimonial = () => {
   return (
     <div className="testimonial">
       <div className="testimonial__quote">
+        <img src={quoteIcon} alt="quote" className="testimonial__quote__icon" />
         <span>
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
           below for those interested. Sections 1.10.32 and 1.10.33 from "de

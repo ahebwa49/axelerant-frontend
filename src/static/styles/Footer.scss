@@ -13,11 +13,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("./static/img/footerBg.jpg");
+  background: url("../img/footerBg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-//   filter: brightness(60%);
+  //   filter: brightness(60%);
 }
 
 .footer__header {
@@ -97,7 +97,7 @@
   display: flex;
   width: 100%;
   background: #161513;
-//   border: 1px solid red;
+  //   border: 1px solid red;
   position: absolute;
   bottom: 0;
   height: 6rem;
@@ -108,10 +108,10 @@
   display: flex;
   align-items: center;
   margin-left: 4rem;
-  color: #A29896;
+  color: #a29896;
   position: relative;
   width: 50%;
-//   border: 1px solid blue;
+  //   border: 1px solid blue;
 }
 
 .footer__note__socials {
@@ -120,15 +120,105 @@
   justify-content: flex-end;
   margin-right: 4rem;
   position: relative;
-  color: #A29896;
+  color: #a29896;
   width: 50%;
-//   border: 1px solid green;
+  //   border: 1px solid green;
 }
 
-.footer__note__socials span{
-    margin-right: 1rem;
+.footer__note__socials span {
+  margin-right: 1rem;
 }
 
-.footer__note__socials img{
-    margin-right: 0.5rem;
+.footer__note__socials img {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer__inputs {
+    // border: 1px solid blue;
+    width: 80%;
+  }
+
+  .footer__textarea {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    height: 100vh;
+  }
+
+  .footer__header {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+    margin: 2rem;
+    margin-bottom: 0rem;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    line-height: 1.25;
+  }
+
+  .footer__header__subheading {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .footer__inputs {
+    display: flex;
+    margin-top: 0rem;
+    flex-direction: column;
+    // border: 1px solid blue;
+    width: 90%;
+  }
+
+  .footer__inputs input {
+    // border: 1px solid red;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
+    width: auto;
+  }
+
+  .footer__textarea {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    // border: 1px solid red;
+    margin-top: 0rem;
+    position: relative;
+  }
+
+  .footer__textarea textarea {
+    height: 4rem;
+  }
+
+  .footer__note {
+    flex-direction: column;
+    height: 6rem;
+  }
+
+  .footer__note__copyright {
+    margin-left: 0rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    // border: 1px solid blue;
+  }
+
+  .footer__note__socials {
+    justify-content: center;
+    margin-right: 0rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    // border: 1px solid green;
+  }
 }

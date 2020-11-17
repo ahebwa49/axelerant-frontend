@@ -1,6 +1,6 @@
 import React from "react";
-import "./Map.scss";
-import AboutUsImage from "./static/img/aboutus.jpg";
+import "../static/styles/Map.scss";
+import AboutUsImage from "../static/img/aboutus.jpg";
 
 export const Map = () => {
   return (
